@@ -476,6 +476,10 @@ function mod:setup_with_automation(options)
           Rejection = {
             enable = false,
           },
+          -- Likewise, Delayed don't make sense to pass to TSA
+          Delayed = {
+            enable = false,
+          },
         },
         back_pressure = options.back_pressure,
       }
